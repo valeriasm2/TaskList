@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://code.jquery.com; script-src 'self' 'unsafe-inline' https://code.jquery.com; media-src *; img-src 'self' data: content:;">
+        <title>Tasklist</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="taskContainer">
+            <h1>TASKLIST v0.4</h1>
+            <button id="btnAdd">+</button>
+            <ul id="miLista"></ul>
+        </div>
+
+        <!-- Form nueva tarea -->
+        <form id="taskform" title="Nueva Tarea" style="display:none;">
+            <p>Introduce la nueva tarea:</p>
+            <input type="text" id="tasktext" placeholder="Escribe tu tarea">
+        </form>
+
+        <!-- Form editar tarea -->
+        <form id="editForm" title="Editar Tarea" style="display:none;">
+            <p>Edita la tarea:</p>
+            <input type="text" id="editText" placeholder="Edita tu tarea">
+        </form>
+
+        <!-- <script src="cordova.js"></script> -->
+        <script src="js/index.js"></script>
+    </body>
+</html>
